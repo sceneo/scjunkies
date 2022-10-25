@@ -1,0 +1,117 @@
+/*
+=========================================================
+* BLK Design System Angular - v1.2.0
+=========================================================
+
+* Product Page: https://www.creative-tim.com/product/blk-design-system-angular
+* Copyright 2021 Creative Tim (https://www.creative-tim.com)
+* Licensed under MIT
+
+* Coded by Creative Tim
+
+=========================================================
+
+* The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+ */
+
+// Core
+
+@import "src/assets/scss/blk-design-system/custom/functions";
+@import "src/assets/scss/blk-design-system/bootstrap/functions";
+
+@import "src/assets/scss/blk-design-system/custom/variables";
+@import "src/assets/scss/blk-design-system/bootstrap/variables";
+
+@import "src/assets/scss/blk-design-system/custom/mixins";
+@import "src/assets/scss/blk-design-system/bootstrap/mixins";
+
+// Bootstrap components
+
+@import "src/assets/scss/blk-design-system/bootstrap/root";
+@import "src/assets/scss/blk-design-system/bootstrap/reboot";
+@import "src/assets/scss/blk-design-system/bootstrap/type";
+@import "src/assets/scss/blk-design-system/bootstrap/images";
+@import "src/assets/scss/blk-design-system/bootstrap/code";
+@import "src/assets/scss/blk-design-system/bootstrap/grid";
+@import "src/assets/scss/blk-design-system/bootstrap/tables";
+@import "src/assets/scss/blk-design-system/bootstrap/forms";
+@import "src/assets/scss/blk-design-system/bootstrap/buttons";
+@import "src/assets/scss/blk-design-system/bootstrap/transitions";
+@import "src/assets/scss/blk-design-system/bootstrap/dropdown";
+@import "src/assets/scss/blk-design-system/bootstrap/button-group";
+@import "src/assets/scss/blk-design-system/bootstrap/input-group";
+@import "src/assets/scss/blk-design-system/bootstrap/custom-forms";
+@import "src/assets/scss/blk-design-system/bootstrap/nav";
+@import "src/assets/scss/blk-design-system/bootstrap/navbar";
+@import "src/assets/scss/blk-design-system/bootstrap/card";
+@import "src/assets/scss/blk-design-system/bootstrap/breadcrumb";
+@import "src/assets/scss/blk-design-system/bootstrap/pagination";
+@import "src/assets/scss/blk-design-system/bootstrap/badge";
+@import "src/assets/scss/blk-design-system/bootstrap/jumbotron";
+@import "src/assets/scss/blk-design-system/bootstrap/alert";
+@import "src/assets/scss/blk-design-system/bootstrap/progress";
+@import "src/assets/scss/blk-design-system/bootstrap/media";
+@import "src/assets/scss/blk-design-system/bootstrap/list-group";
+@import "src/assets/scss/blk-design-system/bootstrap/close";
+@import "src/assets/scss/blk-design-system/bootstrap/modal";
+@import "src/assets/scss/blk-design-system/bootstrap/tooltip";
+@import "src/assets/scss/blk-design-system/bootstrap/popover";
+@import "src/assets/scss/blk-design-system/bootstrap/carousel";
+@import "src/assets/scss/blk-design-system/bootstrap/utilities";
+@import "src/assets/scss/blk-design-system/bootstrap/print";
+
+// Custom components
+
+@import "src/assets/scss/blk-design-system/custom/alerts";
+@import "src/assets/scss/blk-design-system/custom/buttons";
+@import "src/assets/scss/blk-design-system/custom/dropdown";
+@import "src/assets/scss/blk-design-system/custom/footer";
+@import "src/assets/scss/blk-design-system/custom/forms";
+@import "src/assets/scss/blk-design-system/custom/images";
+@import "src/assets/scss/blk-design-system/custom/modal";
+@import "src/assets/scss/blk-design-system/custom/navbar";
+@import "src/assets/scss/blk-design-system/custom/type";
+@import "src/assets/scss/blk-design-system/custom/icons";
+@import "src/assets/scss/blk-design-system/custom/tables";
+@import "src/assets/scss/blk-design-system/custom/checkboxes-radio";
+@import "src/assets/scss/blk-design-system/custom/fixed-plugin";
+@import "src/assets/scss/blk-design-system/custom/pagination";
+@import "src/assets/scss/blk-design-system/custom/misc";
+@import "src/assets/scss/blk-design-system/custom/rtl";
+@import "src/assets/scss/blk-design-system/custom/input-group";
+@import "src/assets/scss/blk-design-system/custom/example-pages";
+@import "src/assets/scss/blk-design-system/custom/progress";
+@import "src/assets/scss/blk-design-system/custom/badge";
+@import "src/assets/scss/blk-design-system/custom/pills";
+@import "src/assets/scss/blk-design-system/custom/tabs";
+@import "src/assets/scss/blk-design-system/custom/info-areas";
+
+// Sections
+@import "src/assets/scss/blk-design-system/custom/sections";
+
+// Vendor / Plugins
+
+@import "src/assets/scss/blk-design-system/custom/vendor/plugin-perfect-scrollbar";
+@import "src/assets/scss/blk-design-system/custom/vendor/plugin-animate-bootstrap-notify";
+@import "src/assets/scss/blk-design-system/custom/vendor/plugin-bootstrap-switch";
+@import "src/assets/scss/blk-design-system/custom/vendor/plugin-nouislider";
+@import "src/assets/scss/blk-design-system/custom/vendor/plugin-datetimepicker";
+
+// Cards
+
+@import "src/assets/scss/blk-design-system/custom/card";
+@import "src/assets/scss/blk-design-system/custom/cards/card-chart";
+@import "src/assets/scss/blk-design-system/custom/cards/card-map";
+@import "src/assets/scss/blk-design-system/custom/cards/card-user";
+@import "src/assets/scss/blk-design-system/custom/cards/card-task";
+@import "src/assets/scss/blk-design-system/custom/cards/card-plain";
+@import "src/assets/scss/blk-design-system/custom/cards/card-register";
+@import "src/assets/scss/blk-design-system/custom/cards/card-stats";
+@import "src/assets/scss/blk-design-system/custom/cards/card-chart";
+
+// Angular changes
+@import "src/assets/scss/blk-design-system/angular/tabs";
+@import "src/assets/scss/blk-design-system/angular/pills";
+@import "src/assets/scss/blk-design-system/angular/alerts";
+@import "src/assets/scss/blk-design-system/angular/datepicker";
+@import "src/assets/scss/blk-design-system/angular/example-pages";
