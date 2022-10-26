@@ -17,6 +17,9 @@ import { ModalModule } from "ngx-bootstrap/modal";
 import { JwBootstrapSwitchNg2Module } from "jw-bootstrap-switch-ng2";
 import { PopoverModule } from "ngx-bootstrap/popover";
 import {FooterComponent} from "./footer.component";
+import { CookiesComponent } from "./cookies/cookies.component";
+import { ImpressumComponent } from "./impressum/impressum.component";
+import { GdprComponent } from "./gdpr/gdpr.component";
 
 
 @NgModule({
@@ -40,6 +43,9 @@ import {FooterComponent} from "./footer.component";
   ],
   declarations: [
     FooterComponent,
+    GdprComponent,
+    ImpressumComponent,
+    CookiesComponent,
   ],
   exports: [
     FooterComponent,

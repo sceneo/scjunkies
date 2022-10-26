@@ -1,13 +1,12 @@
 import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { NgModule } from "@angular/core";
+import {NgModule } from "@angular/core";
 import { FormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { HttpClientModule } from "@angular/common/http";
-
-import { PagesModule } from "./pages/pages.module";
-import {ContentService} from "./services/content.service";
+import { ContentService } from "./services/content.service";
+import { MainModule } from "./main/main.module";
 
 @NgModule({
   declarations: [
@@ -19,7 +18,7 @@ import {ContentService} from "./services/content.service";
     HttpClientModule,
     RouterModule,
     AppRoutingModule,
-    PagesModule
+    MainModule,
   ],
   providers: [
     ContentService

@@ -2,11 +2,11 @@ import { Component, OnInit, OnDestroy } from "@angular/core";
 import noUiSlider from "nouislider";
 
 @Component({
-  selector: "app-index",
-  templateUrl: "index.component.html",
-  styleUrls: ["index.component.scss"]
+  selector: "app-main",
+  templateUrl: "main.component.html",
+  styleUrls: ["main.component.scss"]
 })
-export class IndexComponent implements OnInit, OnDestroy {
+export class MainComponent implements OnInit, OnDestroy {
   isCollapsed = true;
   focus;
   focus1;
