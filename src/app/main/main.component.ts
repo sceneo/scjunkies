@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy } from "@angular/core";
 import noUiSlider from "nouislider";
+import { ContentService } from "../services/content.service";
 
 @Component({
   selector: "app-main",
@@ -7,6 +8,7 @@ import noUiSlider from "nouislider";
   styleUrls: ["main.component.scss"]
 })
 export class MainComponent implements OnInit, OnDestroy {
+
   isCollapsed = true;
   focus;
   focus1;
@@ -14,7 +16,13 @@ export class MainComponent implements OnInit, OnDestroy {
   date = new Date();
   pagination = 3;
   pagination1 = 1;
+
   constructor() {}
+
+  getTitle() {
+    return ContentService.getTitleName();
+  }
+
   scrollToDownload(element: any) {
     element.scrollIntoView({ behavior: "smooth" });
   }

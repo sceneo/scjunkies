@@ -5,6 +5,9 @@ import { Injectable } from '@angular/core';
 })
 export class ContentService {
 
-  constructor() { }
+  constructor() {}
 
+  static getTitleName(): string {
+    return "SC Junkies 1999";
+  }
 }
