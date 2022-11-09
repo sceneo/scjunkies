@@ -6,7 +6,8 @@ import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { HttpClientModule } from "@angular/common/http";
 import { ContentService } from "./services/content.service";
-import { MainModule } from "./main/main.module";
+import { NavigationModule } from "./navigation/navigation.module";
+import { FooterModule } from "./footer/footer.module";
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { MainModule } from "./main/main.module";
     HttpClientModule,
     RouterModule,
     AppRoutingModule,
-    MainModule,
+    FooterModule,
+    NavigationModule,
   ],
   providers: [
     ContentService

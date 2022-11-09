@@ -3,6 +3,7 @@ import { NgModule } from "@angular/core";
 import { CommonModule } from "@angular/common";
 import { FormsModule } from "@angular/forms";
 import { RouterModule } from "@angular/router";
+
 import { BsDropdownModule } from "ngx-bootstrap/dropdown";
 import { ProgressbarModule } from "ngx-bootstrap/progressbar";
 import { TooltipModule } from "ngx-bootstrap/tooltip";
@@ -15,9 +16,8 @@ import { CarouselModule } from "ngx-bootstrap/carousel";
 import { ModalModule } from "ngx-bootstrap/modal";
 import { JwBootstrapSwitchNg2Module } from "jw-bootstrap-switch-ng2";
 import { PopoverModule } from "ngx-bootstrap/popover";
-import {FooterModule} from "../footer/footer.module";
-import { MainComponent } from "./main.component";
-import { GalleryModule } from "../gallery/gallery.module";
+import { HomeComponent } from "./home.component";
+
 
 @NgModule({
   imports: [
@@ -36,16 +36,14 @@ import { GalleryModule } from "../gallery/gallery.module";
     AlertModule.forRoot(),
     BsDatepickerModule.forRoot(),
     CarouselModule.forRoot(),
-    ModalModule.forRoot(),
-    FooterModule,
-    GalleryModule,
+    ModalModule.forRoot()
   ],
   declarations: [
-    MainComponent,
+    HomeComponent,
   ],
   exports: [
-    MainComponent,
+    HomeComponent,
   ],
   providers: []
 })
-export class MainModule {}
+export class HomeModule {}

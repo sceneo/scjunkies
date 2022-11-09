@@ -16,11 +16,7 @@ import { CarouselModule } from "ngx-bootstrap/carousel";
 import { ModalModule } from "ngx-bootstrap/modal";
 import { JwBootstrapSwitchNg2Module } from "jw-bootstrap-switch-ng2";
 import { PopoverModule } from "ngx-bootstrap/popover";
-import {FooterComponent} from "./footer.component";
-import { CookiesComponent } from "./cookies/cookies.component";
-import { ImpressumComponent } from "./impressum/impressum.component";
-import { GdprComponent } from "./gdpr/gdpr.component";
-import { FooterRoutingModule } from "./footer-routing.module";
+import { NavigationComponent } from "./navigation.component";
 
 
 @NgModule({
@@ -29,17 +25,25 @@ import { FooterRoutingModule } from "./footer-routing.module";
     BrowserModule,
     FormsModule,
     RouterModule,
-    FooterRoutingModule,
+    BsDropdownModule.forRoot(),
+    ProgressbarModule.forRoot(),
+    TooltipModule.forRoot(),
+    PopoverModule.forRoot(),
+    CollapseModule.forRoot(),
+    JwBootstrapSwitchNg2Module,
+    TabsModule.forRoot(),
+    PaginationModule.forRoot(),
+    AlertModule.forRoot(),
+    BsDatepickerModule.forRoot(),
+    CarouselModule.forRoot(),
+    ModalModule.forRoot()
   ],
   declarations: [
-    FooterComponent,
-    GdprComponent,
-    ImpressumComponent,
-    CookiesComponent,
+    NavigationComponent,
   ],
   exports: [
-    FooterComponent,
+    NavigationComponent,
   ],
   providers: []
 })
-export class FooterModule {}
+export class NavigationModule {}
