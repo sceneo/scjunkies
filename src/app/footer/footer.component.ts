@@ -1,4 +1,4 @@
-import {Component} from "@angular/core";
+import {Component, EventEmitter, Output} from "@angular/core";
 
 @Component({
   selector: "app-footer",
@@ -7,4 +7,10 @@ import {Component} from "@angular/core";
 })
 export class FooterComponent {
 
+  @Output()
+  onSelection: EventEmitter<void> = new EventEmitter<void>();
+
+  selectItem(): void {
+    this.onSelection.emit();
+  }
 }

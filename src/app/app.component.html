@@ -1,4 +1,4 @@
-<app-navigation></app-navigation>
+<app-navigation (onSelection)="scrollToOutlet()"></app-navigation>
 <div class="wrapper background">
   <div class="page-header header-filter">
     <div class="squares square1"></div>
@@ -14,8 +14,8 @@
       </div>
     </div>
   </div>
-  <div class="container">
+  <div class="container" id="outlet">
     <router-outlet></router-outlet>
   </div>
-  <app-footer></app-footer>
+  <app-footer (onSelection)="scrollToOutlet()"></app-footer>
 </div>

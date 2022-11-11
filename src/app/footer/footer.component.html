@@ -1,13 +1,13 @@
 <footer class="footer">
   <div class="container">
-    <div class="row footer-center">
-            <a class="nav-link footer-item"  [routerLink]="['/footer/impressum']">
+    <div class="row footer-container">
+            <a class="nav-link footer-item"  [routerLink]="['/footer/impressum']" (click)="selectItem()">
               Impressum
             </a>
-            <a class="nav-link footer-item"  [routerLink]="['/footer/cookies']">
+            <a class="nav-link footer-item"  [routerLink]="['/footer/cookies']" (click)="selectItem()">
               Cookierichtlinie
             </a>
-            <a class="nav-link footer-item"  [routerLink]="['/footer/gdpr']">
+            <a class="nav-link footer-item"  [routerLink]="['/footer/gdpr']" (click)="selectItem()">
               Datenschutz
             </a>
     </div>

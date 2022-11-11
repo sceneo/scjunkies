@@ -5,7 +5,7 @@ import {
   HostListener,
   Inject
 } from "@angular/core";
-import { Location } from "@angular/common";
+import {Location, ViewportScroller} from "@angular/common";
 import { DOCUMENT } from "@angular/common";
 import { ContentService } from "./services/content.service";
 import noUiSlider from "nouislider";
@@ -19,6 +19,7 @@ export class AppComponent implements OnInit {
   constructor(
     private renderer: Renderer2,
     public location: Location,
+    private scroller: ViewportScroller,
     @Inject(DOCUMENT) document
   ) {}
   @HostListener("window:scroll", ["$event"])
@@ -67,5 +68,9 @@ export class AppComponent implements OnInit {
 
   getTitle() {
     return ContentService.getTitleName();
+  }
+
+  scrollToOutlet(): void {
+    this.scroller.scrollToAnchor("outlet");
   }
 }

@@ -52,9 +52,20 @@
             [routerLink]="['/home']"
             placement="bottom"
             tooltip="Zurück zum Start"
-            (click)="isCollapsed = !isCollapsed"
+            (click)="selectItem()"
           >
             <p class="d-lg-none d-xl-none">Home</p>
+          </a>
+        </li>
+        <li class="nav-item p-0">
+          <a
+            class="nav-link"
+            [routerLink]="['/gallery']"
+            placement="bottom"
+            tooltip="Unsere Fotos"
+            (click)="selectItem()"
+          >
+            <p class="d-lg-none d-xl-none">Galerie</p>
           </a>
         </li>
         <li class="nav-item p-0">
@@ -80,50 +91,6 @@
             <i class="fab fa-instagram"> </i>
             <p class="d-lg-none d-xl-none">Instagram</p>
           </a>
-        <li class="nav-item p-0">
-          <a
-            class="nav-link"
-            href="https://www.facebook.com/scjunkies"
-            placement="bottom"
-            target="_blank"
-            tooltip="Zum Mitgliedsantrag"
-          >
-            <p class="d-lg-none d-xl-none">Galerie</p>
-          </a>
-        </li>
-        <li class="nav-item p-0">
-          <a
-            class="nav-link"
-            href="https://www.facebook.com/scjunkies"
-            placement="bottom"
-            target="_blank"
-            tooltip="Zum Mitgliedsantrag"
-          >
-            <p class="d-lg-none d-xl-none">Spielberichte</p>
-          </a>
-        </li>
-        <li class="nav-item p-0">
-          <a
-            class="nav-link"
-            href="https://www.facebook.com/scjunkies"
-            placement="bottom"
-            target="_blank"
-            tooltip="Zum Mitgliedsantrag"
-          >
-            <p class="d-lg-none d-xl-none">Archiv</p>
-          </a>
-        </li>
-        <li class="nav-item p-0">
-          <a
-            class="nav-link"
-            href="https://www.facebook.com/scjunkies"
-            placement="bottom"
-            target="_blank"
-            tooltip="Zum Mitgliedsantrag"
-          >
-            <p class="d-lg-none d-xl-none">Mitglied werden</p>
-          </a>
-        </li>
       </ul>
     </div>
   </div>
